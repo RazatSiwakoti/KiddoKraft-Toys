@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiddoKraft Toy Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Style/style.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/New folder/images/Logo Transparent.png" alt="KiddoKraft Logo" class = "logo-img">
+            </div>
 
-    <div id ="header">
-        <div id="logo">
-            <img src="/New folder/images/Logo Transparent.png" alt="KiddoKraft Logo" width="150">
-    </div>
-    <div class="searchbar">
-        <form action="/search" method="get">
-            <input type="text" name="query" placeholder="Search for toys..." required>        </form>
+        <div class="search-container">
+            <input type="search" class="search-input" placeholder="Search..."></input>
+            <button class="search-button"><i class="fas fa-search"></i></button>
         </div>
-    </div>
 
-    </div>
+        <div class="header-action">
+            <button class="login-button"><i class="fas fa-user"></i> Login</button>
+            <button class="cart-button"><i class="fas fa-shopping-cart"></i></button>>
+        </div>
+    </div>    
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="bestseller.html">Best Seller</a></li>
-            <li><a href="shopby.html">Shop By </a></li>
-            <li><a href="Bundle&save.html">Bundle & save</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">HOME</a></li>
+                <li><a href="#" class="nav-link">CATEGORIES</a></li>
+                <li><a href="#" class="nav-link">BEST SELLERS</a></li>
+                <li><a href="#" class="nav-link">SHOP BY</a></li>
+                <li><a href="#" class="nav-link">BUNDLE & SAVE</a></li>
+                <li><a href="#" class="nav-link">TESTIMONIALS</a></li>
+                <li><a href="#" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    </nav>
+
     
 </body>
-
-<footer>
-    <p>&copy; 2023 KiddoKraft Toy Shop. All rights reserved.</p>
-    <p>Follow us on:
-        <a href="https://www.facebook.com/KiddoKraft" target="_blank">Facebook</a>,
-        <a href="https://www.instagram.com/KiddoKraft" target="_blank">Instagram</a>,
-        <a href="https://www.twitter.com/KiddoKraft" target="_blank">Twitter</a>
-    </p>
 </html>
