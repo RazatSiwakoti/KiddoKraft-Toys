@@ -5,77 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiddoKraft - Handmade Wooden Toys</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="Style/styles.css">
+    <link rel="stylesheet" href="Style/desktop.css">
+    <link rel="stylesheet" href="Style/mobile.css">
+    <link rel="stylesheet" href="Style/tablet.css">   
+    
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Script/script.js"></script>
+
 </head>
 <body>
-
+<div class="overlay"></div>
 <!-- Header and Navigation Bar -->
     <header class="main-header">
+        
         <!-- Top Bar -->
         <div class="header-bar-1">
             <div class="container">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>  
+
             <!-- logo -->
             <div class="logo-section">
-                <a href="index.html" class="logo"><img src="images/Logo Transparent.png" alt="KiddoKraft Toy Shop Logo"></a>
+                <a href="index.html" class="logo" aria-label="KiddoKraft Toy Shop Logo"><img src="images/Logo Transparent.png" alt="KiddoKraft Toy Shop Logo"></a>
             </div>
             <!-- Search Section -->
             <div class="search-section">
                 <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search for toys...">
-                    <button class="search-button"><i class="fas fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Search for toys..." aria-label="Search for toys">
+                    <button class="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
                 </div>
             </div>
 
              <!-- User action -->
             <div class="user-actions">
-                <a href="#" class="user-account">                    
-                    <span><i class="fas fa-user"></i> Login</span>
+                <a href="#" class="user-account" aria-label="Login or Register to your account">                    
+                    <span><i class="fas fa-user"></i> Login / Sign up</span>
                 </a>|
 
-                <a href="#" class="cart">                    
+                <a href="#" class="cart" aria-label="View shopping cart">                    
                     <span><i class="fas fa-shopping-cart"></i> Cart</span>
-                    <span class="cart-count">0</span>
+                    <span class="cart-count" aria-label="items in cart">0</span>
                 </a>
             </div>
         </div>
         </div>
 
         <!-- Nav Bar -->
-         <div class="header-bar-2">
+         <div class="header-bar-2" aria-label="Main navigation">
             <nav class="main-nav"> 
                  <ul class="nav-menu"> 
 
-                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" aria-label="Home">HOME</a></li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">CATEGORIES <i class="fas fa-caret-down"></i></a>
+                        <a href="#" class="nav-link" aria-label="Categories menu">CATEGORIES <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                        <li><a href="#">Category 1</a></li>
-                         <li><a href="#">Category 2</a></li>
+                            <li><a href="#">Bedding & Decor</a></li>
+                            <li><a href="#">Castles</a></li>
+                            <li><a href="#">Cars & Vehicles</a></li>
+                            <li><a href="#">Dolls Accessories</a></li>
+                            <li><a href="#">Educational Toys</a></li>
+                            <li><a href="#">Games & Puzzles</a></li>
+                            <li><a href="#">Kitchen Play</a></li>
+                            <li><a href="#">Musical Toys</a></li>
+                            <li><a href="#">Outdoor Play</a></li>
+                            <li><a href="#">Pretend Play</a></li>
+                            <li><a href="#">Ride On Toys</a></li>
+
                         </ul>
                     </li>
                     
-                    <li class="nav-item"><a href="#" class="nav-link">BEST SELLER</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" aria-label="Best seller">BEST SELLER</a></li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">SHOP BY <i class="fas fa-caret-down"></i></a>
+                        <a href="#" class="nav-link" aria-label="Shop by menu">SHOP BY <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Option 1</a></li>
-                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Gift Guide</a></li>
+                            <li><a href="#">Shop By Age</a></li>
+                            <li><a href="#">Shop By Price</a></li>
+                            <li><a href="#">Shop By Material</a></li>
+                            <li><a href="#">Shop By Brand</a></li>
+                            <li><a href="#">Shop By Theme</a></li>
+
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">BUNDLE & SAVE <i class="fas fa-caret-down"></i></a>
+                        <a href="#" class="nav-link" aria-label="Bundle & Save menu">BUNDLE & SAVE <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Bundle 1</a></li>
-                            <li><a href="#">Bundle 2</a></li>
+                          <li><a href="#">Starter Play Bundle</a></li>
+                          <li><a href="#">Outdoor Adventure Set</a></li>
+                          <li><a href="#">Educational Toys Pack</a></li>
+                          <li><a href="#">Pretend Play Bundle</a></li>
+                          <li><a href="#">Holiday Gift Set</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a href="#" class="nav-link">TESTIMONIALS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" aria-label="Testimonials">TESTIMONIALS</a></li>
 
-                    <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" aria-label="contact">CONTACT</a></li>
                 </ul>
             </nav>
 
@@ -278,10 +306,99 @@
     </div>
 
 
-<footer class = "main-footer">
+<footer class = "footer">
     <div class="footer-container">
-        Footer Content Here
+
+<!-- Upper Footer -->
+    <div class="footer-upper">
+<!-- Column 1 -->
+
+        <div class="column">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Meet Our Makers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Wholesale Inquiry</a></li>
+            </ul>
+         </div>
+
+
+<!-- Column 2 -->
+         <div class="column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Warranty</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Click & Collect</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Exchanges & Returns</a></li>
+                </ul>            
+         </div>
+<!-- Column 3 -->
+         <div class="column contact">
+                <h3>Phone</h3>
+                <p>(02) 1234 5678</p>
+
+                <h3>Email</h3>
+                <p>abcd@kiddodo.au</p>
+
+                <h3>Address</h3>
+                <p>abcde St, Auburn,</p>
+                <p>NSW, 2144</p>
+            </div>
+
+<!-- Column 4 -->
+            <div class="column newsletter">
+                <h3>JOIN KIDDOKRAFT</h3>
+                <p>Subscribe to our newsletter to stay up to date on all things (exciting stuff only!)</p>
+                <form class="newsletter-form">
+                <input type="email" placeholder="Your email" aria-label="Enter your email address">
+                <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+                </form>
+            </div>
     </div>
+
+  
+<!-- Lower Footer -->
+    <div class="footer-lower">
+        <div class="abn"><p>ABN | &copy; 2025 Kiddo</p></div>
+
+        <div class="social">
+            <span>Follow us</span>
+            <div class="social-icons">
+           <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Follow us on Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" aria-label="Follow us on YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
+
+        </div>
+        </div>
+
+        <div class="payment">
+            <span>We accept</span>
+            <div class="payment-icons">
+                <i class="fab fa-cc-apple-pay" aria-label="Apple Pay"></i>
+                <i class="fab fa-google-pay" aria-label="Google Pay"></i>
+                <i class="fab fa-cc-visa" aria-label = "Visa"></i>
+                <i class="fab fa-cc-mastercard" aria-label = "Mastercard"></i>
+                <i class="fab fa-paypal" aria-label = "Paypal"></i> 
+                <i class="fab fa-cc-amex" aria-label = "American Express"></i>                     
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+           
+ 
+
 </footer>
 
 
