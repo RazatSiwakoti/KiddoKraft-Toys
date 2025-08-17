@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiddoKraft - Handmade Wooden Toys</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="Style/desktop.css">
-    <link rel="stylesheet" href="Style/mobile.css">
-    <link rel="stylesheet" href="Style/tablet.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css"> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Script/script.js"></script>
+    <script src="script.js"></script>
 
 </head>
 <body>
 <div class="overlay"></div>
+
+<!-- Countdown Bar -->
+  <div class="countdown-bar">
+    Mega Sale starts in <span id="countdown"></span> – Get up to 80% OFF!
+  </div>
+
 <!-- Header and Navigation Bar -->
     <header class="main-header">
         
@@ -60,7 +66,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link" aria-label="Categories menu">CATEGORIES <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Bedding & Decor</a></li>
+                            <li><a href="#">Bedding & Decoration</a></li>
                             <li><a href="#">Castles</a></li>
                             <li><a href="#">Cars & Vehicles</a></li>
                             <li><a href="#">Dolls Accessories</a></li>
@@ -101,172 +107,190 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a href="#" class="nav-link" aria-label="Testimonials">TESTIMONIALS</a></li>
+                    <li class="nav-item"><a href="Testimonials.html" class="nav-link" aria-label="Testimonials">TESTIMONIALS</a></li>
 
-                    <li class="nav-item"><a href="#" class="nav-link" aria-label="contact">CONTACT</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" aria-label="contact">CONTACT</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
-<!-- END of Header Section -->
 
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Handcrafted Wooden Toys for Growing Minds</h1>
-                <p>Discover our collection of safe, durable, and educational wooden toys that inspire creativity and learning</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">Shop Now</a>
-                    <a href="#" class="btn btn-secondary">Learn More</a>
-                </div>
+
+<!-- Main Content Section -->
+ <main class="main-content">
+
+    <!-- New Arrival Section -->    
+    <section class="new-arrivals">
+        <h2 class="section-title">NEW ARRIVALS</h2>
+            <div class="arrivals-gallery">
+                <a href="#"><img src="Figma/NewA1.png" alt="New Arrival 1" class="product-item"></a>                
+                <a href="#"><img src="Figma/NewA2.png" alt="New Arrival 2" class="product-item"></a>
+                <a href="#"><img src="Figma/NewA3.png" alt="New Arrival 3" class="product-item"></a>
             </div>
-            <div class="hero-image">
-                <img src="images/toy.jpg" alt="Beautiful wooden toys collection">
-            </div>
-        </div>
+        <a href="#" class="shop-now-btn">SHOP NOW</a>
+
     </section>
 
-    <!-- Featured Categories -->
-    <section class="featured-categories">
-        <div class="container">
-            <h2>Shop by Category</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <img src="images/toy.jpg" alt="Educational Toys">
-                    <h3>Educational Toys</h3>
-                    <p>Stimulate learning and development</p>
-                    <a href="#" class="category-link">Shop Now</a>
-                </div>
-                <div class="category-card">
-                    <img src="images/toy.jpg" alt="Pretend Play">
-                    <h3>Pretend Play</h3>
-                    <p>Encourage imagination and creativity</p>
-                    <a href="#" class="category-link">Shop Now</a>
-                </div>
-                <div class="category-card">
-                    <img src="images/toy.jpg" alt="Outdoor Play">
-                    <h3>Outdoor Play</h3>
-                    <p>Active fun and adventure</p>
-                    <a href="#" class="category-link">Shop Now</a>
-                </div>
-                <div class="category-card">
-                    <img src="images/toy.jpg" alt="Building Blocks">
-                    <h3>Building Blocks</h3>
-                    <p>Construction and problem-solving</p>
-                    <a href="#" class="category-link">Shop Now</a>
-                </div>
+    <!-- Feature Section -->  
+     <section class="features-section">
+        <div class="feature-item">
+        <i class="fas fa-truck"></i>
+        <h3>FREE SHIPPING</h3>
+        <p>Free shipping on orders over $150</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-wallet"></i>
+        <h3>FLEXIBLE PAYMENTS</h3>
+        <p>Afterpay, Zippay and Paypal available</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-users"></i>
+        <h3>FAMILY OWNED</h3>
+        <p>You are supporting small business</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-globe-americas"></i>
+        <h3>PLANET FRIENDLY</h3>
+        <p>Our range is proudly plastic free</p>
+
+        </div>
+     </section>
+
+     <!-- About Section -->
+    <section class="about-section">
+        <div class="about-section-container">            
+        <div class="intro-image">
+            <img src="Figma/introduction.jpg" alt="KiddoKraft introduction" />
+        </div>
+        <div class="about-section">
+            <h2>Welcome to Kiddokraft</h2>
+            <p>As a small, family-owned business in Sydney, NSW, we pour heart into every toy we create. Our passion focuses on designing and handcrafting sustainable wooden toys that feel like childhood - simple, sturdy and full of wonder. At KiddoKraft, every curve is carved by hand, every finish thoughtfully chosen, and every toy made to grow with curious little hands and minds.</p>
+            <p class="italic-text">“Play like it’s 1950 - the way it was meant to be”</p>
+            <div class="buttons">
+                <button class="btn-learn-more">Learn More</button>
+                <button class="btn--collections">Collections</button>
             </div>
         </div>
+    </div>
     </section>
 
-    <!-- Best Sellers -->
-    <section class="best-sellers">
-        <div class="container">
-            <h2>Best Sellers</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/toy.jpg" alt="Wooden Building Blocks Set">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Wooden Building Blocks Set</h3>
-                        <p class="price">$49.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/toy.jpg" alt="Educational Puzzle Set">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Educational Puzzle Set</h3>
-                        <p class="price">$34.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/toy.jpg" alt="Pretend Kitchen Set">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Pretend Kitchen Set</h3>
-                        <p class="price">$89.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/toy.jpg" alt="Musical Instruments">
-                        <div class="product-overlay">
-                            <button class="quick-view">Quick View</button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Musical Instruments</h3>
-                        <p class="price">$24.99</p>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
+    <!-- Shop Best Seller Section -->
+<section class="shop-best-seller">
+  <div class="header-wrapper">
+        <h2>SHOP BEST SELLER</h2>
+        <a href="#" class="view-all">VIEW ALL <span class="arrow">→</span></a>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="products-container">
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img class = "main-img" src="Figma/best_seller/1.push-truck.png" alt="Wooden-push-truck">
+                <img class = "hover-img" src="Figma/best_seller/1.push-truck2.png" alt="Wooden-push-truck2">
             </div>
+            <h3>Wooden Push Truck</h3>
+            <p class="price">$79.99</p>
+            <button class="btn-product">ADD TO CART</button>
         </div>
-    </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <div class="container">
-            <h2>Why Choose KiddoKraft?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Eco-Friendly</h3>
-                    <p>Made from sustainable materials</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Safe & Durable</h3>
-                    <p>Built to last and safe for children</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Educational</h3>
-                    <p>Promotes learning and development</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-heart"></i>
-                    <h3>Handcrafted</h3>
-                    <p>Made with love and attention to detail</p>
-                </div>
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img class = "main-img" src="Figma/best_seller/2.learning-tower.png" alt="learning-tower">
+                <img class = "hover-img" src="Figma/best_seller/2.learning-tower2.png" alt="learning-tower2">
             </div>
+            <h3>Learning Tower</h3>
+            <p class="price">$129.99</p>
+            <button class="btn-product">ADD TO CART</button>
         </div>
-    </section>
 
-    <!-- Newsletter Signup -->
-    <section class="newsletter-signup">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Updated with New Arrivals</h2>
-                <p>Be the first to know about new products, special offers, and parenting tips!</p>
-                <form class="newsletter-form-main">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+        <div class="product-card">
+            <div class="image-wrapper">
+            <img class = "main-img" src="Figma/best_seller/3.grocerystand.jpg" alt="grocery-stand">
+            <img class = "hover-img" src="Figma/best_seller/3.grocerystand2.jpg" alt="grocery-stand2">
+        </div>        
+            <h3>Toy Grocer Stand</h3>
+            <p class="price">$39.99</p>
+            <button class="btn-product">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img class = "main-img" src="Figma/best_seller/4.pan&pot.png" alt="play-pot-pan-set">
+                <img class = "hover-img" src="Figma/best_seller/4.pan&pot2.png" alt="play-pot-pan-set2">
             </div>
+            <h3>Wooden Kitchen Set</h3>
+            <p class="price">$35.00</p>
+            <button class="btn-product">ADD TO CART</button>
         </div>
-    </section>
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img class = "main-img" src="Figma/best_seller/5.castleset.png" alt="Castle-set">
+                <img class = "hover-img" src="Figma/best_seller/5.castleset2.png" alt="Castle-set2">
+            </div>
+            <h3>Large Castle Set</h3>
+            <p class="price">$159.99</p>
+            <button class="btn-product">ADD TO CART</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Popular Category -->
+<section class="popular-categories">
+    <h2>Popular Categories</h2>
+
+    <div class="categories-container">        
+         <div class="category-card">
+            <img src="Figma/Categories/1 Vehicles.jpg" alt="Vehicles">
+            <span class="category-text">VEHICLES</span>
+        </div>
+
+        <div class="category-card">
+            <img src="Figma/Categories/2 Educational.jpg" alt="Educational">
+            <span class="category-text">EDUCATIONAL</span>
+        </div>
+
+        <div class="category-card">
+            <img src="Figma/Categories/3 Small World Play.jpg" alt="Small World Play">
+            <span class="category-text">Small World Play</span>
+        </div>
+        
+        <div class="category-card">
+            <img src="Figma/Categories/4 Crafting.png" alt="Crafting">
+            <span class="category-text">CRAFTING</span>            
+        </div>
+
+        <div class="category-card">
+            <img src="Figma/Categories/5 Household.jpg" alt="Household">
+            <span class="category-text">HOUSEHOLD</span>            
+        </div>
+
+        <div class="category-card">
+            <img src="Figma/Categories/6 BUILDING SETS.jpg" alt="Building Sets">
+            <span class="category-text">BUILDING SETS</span>            
+        </div>
+
+    </div>
+</section>
 
 
+<!-- Promotional Video Section -->
+<section class="promo-video">
+    <div class="video-header">
+        <h2>Watch Our Kids Learn & Play!</h2>
+        <p>See how our educational toys inspire creativity and fun.</p>
+    </div>
+    <div class="video-wrapper">
+        <video controls>
+            <source src="Figma/kid video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+</main>
+
+<!-- ------Footer Section------ -->
 <footer class = "footer">
     <div class="footer-container">
 
@@ -302,13 +326,13 @@
 <!-- Column 3 -->
          <div class="column contact">
                 <h3>Phone</h3>
-                <p>(02) 1234 5678</p>
+                <p>+61 123 456 78p</p>
 
                 <h3>Email</h3>
-                <p>abcd@kiddodo.au</p>
+                <p>support@kiddokraft.com</p>
 
                 <h3>Address</h3>
-                <p>abcde St, Auburn,</p>
+                <p>61-71 Queen Street, Auburn</p>
                 <p>NSW, 2144</p>
             </div>
 
@@ -326,7 +350,7 @@
   
 <!-- Lower Footer -->
     <div class="footer-lower">
-        <div class="abn"><p>ABN | &copy; 2025 Kiddo</p></div>
+        <div class="abn"><p>20032655 | &copy; 2025 KiddoKraft</p></div>
 
         <div class="social">
             <span>Follow us</span>
@@ -360,6 +384,25 @@
  
 
 </footer>
+
+
+
+<!-- Login Modal -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required><br><br>
+      <input type="password" placeholder="Password" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+
+
+
 
 
 </body>
