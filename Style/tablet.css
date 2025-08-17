@@ -79,4 +79,41 @@
         flex: 1;
         margin-left: 20px;
     }
+    .footer-upper {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .column h3 {
+        font-size: 18px; /* smaller headings */
+    }
+
+    .footer-lower {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .social, .payment, .abn {
+        flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .payment-icons i, .social-icons i {
+        font-size: 22px; /* adjust icon size for mobile */
+    }
+
+    .newsletter input, .newsletter button {
+        font-size: 14px; /* adjust input size */
+        padding: 12px;
+    }
+
+    .newsletter button {
+        margin-top: 10px;
+    }
 }
